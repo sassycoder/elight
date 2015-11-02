@@ -1,2 +1,2 @@
-EMPIRE
+Bootstrapped responsive templates
 ====
