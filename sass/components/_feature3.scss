@@ -1,0 +1,29 @@
+.component.feature-three {
+	margin: 40px 0 50px 0;
+
+	p:not(.heading):not(.copy) {
+		font-family: 'foundation_sansregular';
+		font-size: 1.6rem;
+		line-height: 2.2rem;
+		margin-bottom: 10px;
+
+		strong {
+			font-family: 'foundation_sansblack';
+		}
+	}
+
+	.heading {
+		font-size: 4.2rem;
+		line-height: 3.6rem;
+		margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+	}
+
+	.copy {
+		font-family: 'foundation_sansregular';
+		font-size: 1.7rem;
+		line-height: 2.2rem;
+		margin-bottom: 10px;
+	}
+}

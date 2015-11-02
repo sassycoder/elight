@@ -1,0 +1,12 @@
+/* Webfont: ChronicleTextG2-Italic */@font-face {
+    font-family: 'ChronicleTextG2';
+    src: url('ChronicleTextG2-Italic.eot'); /* IE9 Compat Modes */
+    src: url('ChronicleTextG2-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('ChronicleTextG2-Italic.woff') format('woff'), /* Modern Browsers */
+         url('ChronicleTextG2-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('ChronicleTextG2-Italic.svg#ChronicleTextG2-Italic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

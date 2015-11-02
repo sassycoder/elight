@@ -1,0 +1,65 @@
+.component.watch-trailer {
+  text-align: center;
+  margin: 30px 0 40px;
+
+  a {
+    display: inline-block;
+    position: relative;
+    font-family: 'foundation_sansBlkCn';
+    font-size: 1.8rem;
+    line-height: 1.5rem;
+    border: 1px solid $black;
+    border-radius: 4px;
+    padding: 6px 15px 6px 6px;
+    text-align: center;  
+    color: $black;
+    overflow: hidden;
+
+    &.ldng {
+      &:before {
+        content: '\f03d';
+        -webkit-animation: bt-spin 2s infinite linear;
+        animation: bt-spin 2s infinite linear;
+      }
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: text-bottom;
+      text-transform: uppercase;
+    }
+
+    iframe {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -31px;
+      bottom: 0;
+      height: 101px;
+      width: 100%;
+      opacity: 0;
+    }
+
+    &:before {
+      content: '\F052';
+      font-family: 'BlackTieRegular';
+      font-size: 2.4rem;
+      line-height: 2.4rem;
+      margin: 0 4px 0 0;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+
+.player .controls .play {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  bottom: 0;
+  height: 100%;
+  z-index: 99!important;
+}

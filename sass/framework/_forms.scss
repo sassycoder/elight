@@ -1,0 +1,320 @@
+fieldset {
+    margin: 10px 0 20px 0;
+    padding: 10px;
+    border: 1px solid #666
+}
+
+fieldset legend {
+    margin: 0;
+    padding: 5px;
+    font-size: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #666;
+    background-color: #fff
+}
+
+label {
+    display: inline-block;
+    font-family: 'LatoBlack';
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 16px;
+    line-height: 1.6rem;
+    color: $black;
+
+    span {
+        font-size: 10px;
+        font-size: 1rem;
+        line-height: 16px;
+        line-height: 1.6rem;
+    }
+}
+
+.help, .req {
+    display: inline-block;
+    font-family: 'LatoBlack';
+    font-size: 11px;
+    font-size: 1.1rem;
+    line-height: 16px;
+    line-height: 1.6rem;
+    color: $black;
+}
+
+.field-row {
+    float: none;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.field-row.with-help-text {
+    display: inline-block;
+    width: auto;
+    position: relative;
+    overflow: visible
+}
+
+input[type="checkbox"],input[type="radio"] {
+    display: block;
+    width: 12px;
+    height: 12px;
+    cursor: pointer
+}
+
+input[type="file"],select {
+    cursor: pointer
+}
+
+input {
+    &[type="text"], &[type="email"], &[type="password"], &[type="tel"] {
+        display: inline-block;
+        border: 1px solid $rhapsodyBlue;
+        color: $black;
+        padding: 10px 40px 10px 8px;
+        border-radius: 5px;
+        width: 340px;
+        font-family: 'LatoBlack';
+        font-size: 14px;
+        font-size: 1.4rem;
+        line-height: 16px;
+        line-height: 1.6rem;
+    }
+}
+
+textarea {
+    display: inline-block;
+    border: 1px solid $maroon;
+    color: $offBlack;
+    padding: 10px 8px;
+    border-radius: 5px;
+    width: auto;
+    font-family: 'LatoBlack';
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 16px;
+    line-height: 1.6rem;
+}
+
+div.selector {
+    display: inline-block;
+    border: 1px solid #becf00;
+    color: #000;
+    border-radius: 5px;
+    width: auto;
+    padding: 0;
+    font-family: 'MuseoSans300';
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 16px;
+    line-height: 1.6rem;
+    background: #fff;
+    height: auto;
+
+    span {
+      background: none;
+      color: #000;
+      height: auto;
+      padding: 10px 8px;
+      font-family: 'MuseoSans300';
+      font-size: 14px;
+      font-size: 1.4rem;
+      line-height: 16px;
+      line-height: 1.6rem;
+      width: 300px;
+
+      &:after {
+        content: '3';
+        position: absolute;
+        right: 8px;
+        top: 0;
+        font-family: 'ElegantIcons';
+        font-size: 22px;
+        font-size: 2.2rem;
+        line-height: 26px;
+        line-height: 3.2rem;
+      }
+    }
+
+    select {
+      height: 100%;
+      top: 0;
+    }
+}
+
+input:hover,input:focus,input:active,input[type="text"]:hover,input[type="text"]:focus,input[type="text"]:active,input[type="password"]:hover,input[type="password"]:focus,input[type="password"]:active,input[type="file"]:hover,input[type="file"]:focus,input[type="file"]:active,input[type="email"]:hover,input[type="email"]:focus,input[type="email"]:active,textarea:hover,textarea:focus,textarea:active {
+    //background: #F3F3F3
+    outline: none;
+}
+
+select:hover,select:focus,select:active {
+    //background: #F3F3F3
+}
+
+.fields-floated .field-row {
+    float: none;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 10px
+}
+
+.fields-floated .field-row.with-help-text {
+    display: inline-block;
+    width: auto;
+    position: relative;
+    overflow: visible
+}
+
+.fields-floated .field-row>label,.fields-floated .field-row>span.label {
+    float: left;
+    width: 100px;
+    margin-right: 10px
+}
+
+.fields-floated>.field-row>select,.fields-floated>.field-row>input,.fields-floated>.field-row>textarea {
+    float: left;
+    width: 200px
+}
+
+.fields-floated .field-row>.fields-checkbox-radio {
+    float: left;
+    padding-left: 0
+}
+
+.fields-stacked .field-row {
+    padding-bottom: 10px;
+    overflow: hidden
+}
+
+.fields-stacked .field-row>label,.fields-stacked .field-row>span.label {
+    display: block;
+    margin-bottom: 10px
+}
+
+.fields-stacked>.field-row>select,.fields-stacked>.field-row>input,.fields-stacked>.field-row>textarea {
+    display: block;
+    width: 200px
+}
+
+.fields-checkbox-radio>.field-row>label,.fields-checkbox-radio>.field-row>span.label {
+    float: left;
+    margin-right: 15px;
+    padding: 0 10px 10px
+}
+
+.fields-checkbox-radio>.field-row>input[type="checkbox"],.fields-checkbox-radio>.field-row>input[type="radio"] {
+    float: left;
+    margin: 1px 5px 0px 1px
+}
+
+.fields-floated .field-row .submit-btn,.fields-stacked .field-row .submit-btn {
+    float: left;
+    width: 150px;
+    padding: 2px 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    overflow: visible;
+    color: #000;
+    font-size: 15px;
+    font-size: 1.5rem;
+    font-family: Arial, Verdana;
+    font-weight: normal;
+    text-align: center;
+    background-color: #f6f6f6;
+    cursor: pointer;
+    border: 1px solid #ccc
+}
+
+.field-row .submit-btn:hover,.field-row .submit-btn:focus,.field-row .submit-btn:active {
+    color: #fff;
+    background-color: #333;
+    text-decoration: none
+}
+
+.fields-checkbox-radio>.field-row>input[type="radio"]:hover,input[type="radio"]:focus,input[type="radio"]:active,.fields-checkbox-radio>.field-row>input[type="checkbox"]:hover,input[type="checkbox"]:focus,input[type="checkbox"]:active {
+    outline-color: #666766;
+    outline-style: solid;
+    outline-width: 1px
+}
+
+.error-select {
+    display: block;
+    border: 1px solid red;
+    float: left
+}
+
+.error-select span {
+    //background-color: #f3f3f3 !important
+}
+
+div.error-message {
+    background: rgba($rhapsodyBlue, 0.1);
+    border: 1px solid $rhapsodyBlue;
+    color: #ff0000;
+    margin-bottom: 15px;
+    padding: 8px;
+    display: none;
+    font-size: 12px;
+    font-size: 1.2rem;
+}
+
+div.error-message ul {
+    list-style-type: square;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 20px
+}
+
+div.error-message ul li {
+    margin-bottom: 0
+}
+
+input.error,.form-uniform.standard .uniform-text.error,.form-uniform.standard .uniform-checkbox {
+    background: none repeat scroll 0 0 #F3F3F3;
+    border: 1px solid red
+}
+
+input.error:hover,input.error:focus,input.error:active,.form-uniform.standard .uniform-text.error:hover,.form-uniform.standard .uniform-text.error:focus,.form-uniform.standard .uniform-text.error:active,.form-uniform.standard .uniform-checkbox:hover,.form-uniform.standard .uniform-checkbox:focus,.form-uniform.standard .uniform-checkbox:active {
+    border: 1px solid red
+}
+
+textarea.error {
+    background: none repeat scroll 0 0 #F3F3F3;
+    border: 1px solid red
+}
+
+.error-text {
+    margin: 0;
+    color: red;
+    font-size: 12px;
+    font-size: 1.2rem;
+    float: left;
+    width: 100%
+}
+
+.fields-floated .error-text {
+    margin-left: 110px
+}
+
+@media all and (max-width: 1430px) {
+    .fields-floated textarea.error+.error-text {
+        margin-left:0
+    }
+}
+
+@media all and (max-width: 1023px) {
+    .fields-floated textarea.error+.error-text {
+        margin-left:110px
+    }
+}
+
+@media all and (max-width: 767px) {
+    .fields-floated textarea.error+.error-text {
+        margin-left:0
+    }
+
+    textarea {
+        width: 94%
+    }
+}

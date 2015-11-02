@@ -1,0 +1,49 @@
+.component.article-link {
+  position: relative;  
+  display: block;
+  border-bottom: dotted 2px;
+  border-top: 2px dotted;
+  border-color: rgba(255,255,255,.5);
+  padding: 13px 55px 10px 7px;
+  margin: 0 15px;
+  margin-top: 40px;
+  min-height: 90px; 
+  -webkit-font-smoothing: antialiased;
+
+  &:after {
+    content: '\F0A3';
+    font-family: 'BlackTieRegular';
+    font-size: 3rem;
+    line-height: 3rem;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -1.5rem;
+    opacity: 0.6;
+  }
+
+  ~ .article-link {
+    border-top: none;
+    border-color: rgba(255,255,255,.5);
+    margin-top: 0;
+  }
+
+  a {
+  	font-family: 'foundation_sanscondensed';
+	  font-size: 1.6rem;
+	  line-height: 1.7rem; 
+  }
+
+  strong {
+    font-family: 'foundation_sansBlkCn';
+    font-size: 1.5rem;  
+  }
+
+  span {
+    font-family: 'foundation_sansBlkCn';
+    font-size: 2rem;
+    line-height: 1.7rem;
+    display: block;
+    text-transform: uppercase;
+  }
+}

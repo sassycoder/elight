@@ -1,0 +1,48 @@
+.component.pullout-caption {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	font-family: 'ChronicalTextG2Bold';
+	font-size: 1.4rem;
+	line-height: 1.6rem;
+	text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+
+	.border {
+		position: absolute;
+		height: 4px;
+		width: 100%;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto 0;
+		background-color: $black;
+		z-index: 1;
+	}
+
+	.text {
+		display: inline-block;
+		position: relative;
+		text-align: center;
+		background-color: $white;
+		min-width: 90px;
+		padding: 2px 12px;
+		border: 4px solid $black;
+		border-radius: 4px;
+		color: $black;
+		z-index: 2;
+
+		&:empty {
+			display: none;
+		}
+	}
+}
+
+.project-page {
+	.main-content .pane > .component.pullout-caption {
+		position: relative;
+		top: 0;
+	}
+
+}

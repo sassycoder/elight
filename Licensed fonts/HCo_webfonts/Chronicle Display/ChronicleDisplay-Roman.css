@@ -1,0 +1,12 @@
+/* Webfont: ChronicleDisplay-Roman */@font-face {
+    font-family: 'ChronicleDisplay';
+    src: url('ChronicleDisplay-Roman.eot'); /* IE9 Compat Modes */
+    src: url('ChronicleDisplay-Roman.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('ChronicleDisplay-Roman.woff') format('woff'), /* Modern Browsers */
+         url('ChronicleDisplay-Roman.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('ChronicleDisplay-Roman.svg#ChronicleDisplay-Roman') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

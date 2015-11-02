@@ -1,0 +1,19 @@
+.skip {
+  position: absolute;
+  left: -999em
+}
+
+a.skip:active,a.skip:focus {
+  top: 0;
+  left: 0;
+  color: $gray-base;
+  background: $brand-primary;
+  font-size: 1.1em;
+  display: block;
+  padding: 0.4em;
+  border: 0.1em solid $gray-base;
+  white-space: nowrap;
+  width: 14em;
+  text-align: center;
+  font-weight: bold
+}

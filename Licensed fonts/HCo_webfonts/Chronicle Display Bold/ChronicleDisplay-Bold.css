@@ -1,0 +1,12 @@
+/* Webfont: ChronicleDisplay-Bold */@font-face {
+    font-family: 'ChronicleDisplayBold';
+    src: url('ChronicleDisplay-Bold.eot'); /* IE9 Compat Modes */
+    src: url('ChronicleDisplay-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('ChronicleDisplay-Bold.woff') format('woff'), /* Modern Browsers */
+         url('ChronicleDisplay-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('ChronicleDisplay-Bold.svg#ChronicleDisplay-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

@@ -1,0 +1,51 @@
+.component.pullout-two {
+	margin: 40px 0 30px;
+	padding: 30px 25px 30px 30px;
+	color: $white;
+	background-color: $black;
+	position: relative;
+
+	.pullout-caption {
+    z-index: 1001;
+    margin: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    position: absolute;
+    top: -16px;
+
+    .border {
+      background-color: $black;
+    }
+    .text {
+      background-color: $white;
+      border-color: $black;
+      color: $black;
+    }
+  }
+
+	.pic {
+		background-image: url(/HTMLResources/img/structure/pullout2.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: transparent;
+    background-size: cover;
+    float: left;
+    width: 117px;
+    height: 173px;
+    margin: 0 0 10px 0;
+	}
+
+	.info {
+		font-family: 'foundation_sanscondensed';
+		font-size: 1.4rem;
+		line-height: 1.6rem;
+		margin: 0 0 0 137px;
+		padding: 0;
+
+		strong {
+			font-family: 'foundation_sansBlkCn';
+			-webkit-font-smoothing: antialiased;
+		}
+	}
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>     <html class="no-js ie ltie10 ltie9 ltie8 ltie7 ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>        <html class="no-js ie ltie10 ltie9 ltie8 gtie6 gtie5 ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>        <html class="no-js ie ltie10 ltie9 gtie7 gtie6 gtie5 ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>        <html class="no-js ie ltie10 gtie8 gtie7 gtie6 gtie5 ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<script type="text/javascript">document.documentElement.className = document.documentElement.className.replace('no-js ','no-js').replace('no-js','');</script>
+	    <title>Vanilla Templates</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	
+	    <!-- CSS -->
+	  <link type="text/css" rel="stylesheet" href="HTMLResources/css/bootstrap.css">
+		<link type="text/css" rel="stylesheet" href="HTMLResources/css/main.css">
+  <link rel="stylesheet" href="prism.css">
+</head>
+
+<body class="project-page">
+<div><a href="#skipnav" class="skip">Skip to main content</a></div>
+<div class="actions">
+	<a href="#" class="toggle-grid">Toggle grid</a>
+<!-- 	<a href="#" class="toggle-grid-type">Toggle gutters</a> -->
+</div>
+
+<header class="cf">
+  <a target="_blank" href="#"><img src="HTMLResources/img/structure/logo_rhapsody.png" alt="Rhapsody Media"></a>
+</header><!-- end header -->
+
+<div class="wrapper">
+	<div class="main-content">
+    <a id="skipnav" tabindex="-1"></a>
+
+			<div class="pane base12 component-header">
+
+				<!-- START: COMPONENT DETAILS -->
+				<h2>Implementation notes</h2>
+				<!-- END: COMPONENT DETAILS -->
+
+			</div><!-- .pane -->
+
+
+        <div class="pane base12">
+      		<p class="rte-h"><strong>Gallery/Single image component</strong></p>
+      		<p>
+            - The user should be prompted to upload a low res (thumbnail) and high res version of each image. (Low res is mandatory)<br>
+- The low res version is always displayed on the page. The high res version is only displayed in a modal window.<br><br>
+
+- The low res version should be written to the page as a standard &lt;img&gt; (see example below)<br>
+- The high res version should be written to the href attribute of an &lt;a&gt; tag. The CMS needs to obtain the dimensions of the image that is referenced in the href and write them to a data attribute (see example below)<br></p>
+
+<pre class="  language-markup"><code class="  language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>image1.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">itemprop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>contentUrl<span class="token punctuation">"</span></span> <span class="token attr-name">data-size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>1200x1210<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>gallery-thumb<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span> 
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>image1_thumb.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">itemprop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>thumbnail<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Image description<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span></code></pre>
+<br><br>
+<p>- if the user does not upload a high res version, the low res version should be referenced in the &lt;a&gt; instead.<br>
+    
+- The user should be able to add an optional caption heading and caption text (see example below)<br>
+
+- The user should be able to use HTML tags within this content<br></p>
+
+
+<pre class="  language-markup"><code class="  language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figcaption</span> <span class="token attr-name">itemprop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>caption description<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        &lt;span class="cap-heading”&gt;Caption heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+        &lt;span class="caption”&gt;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>Caption<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span> text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figcaption</span><span class="token punctuation">&gt;</span></span></code></pre>
+<br><br>
+
+<p>The final HTML output should be as follows:<br></p>
+
+
+<pre class="  language-markup"><code class="  language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>component gallery<span class="token punctuation">"</span></span> <span class="token attr-name">itemscope</span> <span class="token attr-name">itemtype</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://schema.org/ImageGallery<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figure</span> <span class="token attr-name">itemprop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>associatedMedia<span class="token punctuation">"</span></span> <span class="token attr-name">itemscope</span> <span class="token attr-name">itemtype</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://schema.org/ImageObject”<span class="token punctuation">&gt;</span>
+
+   &lt;a href<span class="token punctuation">=</span>“image1.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">itemprop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>contentUrl<span class="token punctuation">"</span></span> <span class="token attr-name">data-size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>1200x1210<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>gallery-thumb”<span class="token punctuation">&gt;</span> 
+  &lt;img src<span class="token punctuation">=</span>“image1_thumb.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">itemprop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>thumbnail<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Image description<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span> 
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figcaption</span> <span class="token attr-name">itemprop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>caption description<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        &lt;span class="cap-heading”&gt;Caption heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+        &lt;span class="caption”&gt;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>Caption<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span> text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figcaption</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figure</span><span class="token punctuation">&gt;</span></span>   
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre><br>
+
+<p><strong>Other options</strong></p>
+<p>- The user should be able to specify whether the image/gallery is full-width. I would suggest a checkbox with a label of "Full width". If the user checks this box, the CMS would add a css class to the component e.g.<br></p>
+
+<pre class="  language-markup"><code class="  language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>component gallery <b>full-width</b><span class="token punctuation">"</span></span> <span class="token attr-name">itemscope</span> <span class="token attr-name">itemtype</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://schema.org/ImageGallery<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+...</code></pre><br>
+
+<p>- The user should be able to specify a background colour for the image/gallery. The CMS would write the colour inline e.g.<br></p>
+<pre class="  language-markup"><code class="  language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>image1.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">itemprop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>contentUrl<span class="token punctuation">"</span></span> <span class="token attr-name">data-size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>1200x1210<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>gallery-thumb<span class="token punctuation">"</span></span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">background-color</span><span class="token punctuation">:</span> #ebebeb<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span> 
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>image1_thumb.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">itemprop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>thumbnail<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Image description<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+        </div>
+
+	</div><!-- .main -->
+	<div class="push"></div> <!-- For sticky footer -->
+</div><!-- .wrapper -->
+
+		<script type="text/javascript" src="HTMLResources/js/lib.min.js"></script>
+		<script type="text/javascript" src="HTMLResources/js/framework.min.js"></script>
+		<script type="text/javascript" src="HTMLResources/js/components.min.js"></script>
+	</body>
+</html>

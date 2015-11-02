@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>     <html class="no-js ie ltie10 ltie9 ltie8 ltie7 ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>        <html class="no-js ie ltie10 ltie9 ltie8 gtie6 gtie5 ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>        <html class="no-js ie ltie10 ltie9 gtie7 gtie6 gtie5 ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>        <html class="no-js ie ltie10 gtie8 gtie7 gtie6 gtie5 ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<script type="text/javascript">document.documentElement.className = document.documentElement.className.replace('no-js ','no-js').replace('no-js','');</script>
+	    <title>Vanilla Templates</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	
+	    <!-- CSS -->
+	  <link type="text/css" rel="stylesheet" href="HTMLResources/css/bootstrap.css">
+		<link type="text/css" rel="stylesheet" href="HTMLResources/css/main.css">
+</head>
+
+<body class="project-page">
+<div><a href="#skipnav" class="skip">Skip to main content</a></div>
+<div class="actions">
+	<a href="#" class="toggle-grid">Toggle grid</a>
+<!-- 	<a href="#" class="toggle-grid-type">Toggle gutters</a> -->
+</div>
+
+<header class="cf">
+  <a target="_blank" href="#"><img src="HTMLResources/img/structure/logo_rhapsody.png" alt="Rhapsody Media"></a>
+</header><!-- end header -->
+
+<div class="wrapper">		
+
+  <div class="main-content">
+    <a id="skipnav" tabindex="-1"></a>
+
+
+			<div class="pane base12 component-header">
+
+				<!-- START: COMPONENT DETAILS -->
+				<h2>Component: Gallery Pullout 1</h2>
+
+				<p><strong>Description:</strong> Gallery with heading and caption. Images open in a modal window.</p>
+				<!-- END: COMPONENT DETAILS -->
+
+			</div><!-- .pane -->
+
+
+
+        <div class="pane base6">
+            <div class="component gallery carousel modal gallery-pullout-one" itemscope itemtype="http://schema.org/ImageGallery">
+            
+              <div class="component pullout-caption">
+                <div class="border"></div>
+                <div class="text">Birdwatching</div>
+              </div> 
+            
+              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="HTMLResources/img/components/gallery/hero1.jpg" itemprop="contentUrl" data-size="1200x1210" class="gallery-thumb">
+                    <img src="HTMLResources/img/components/gallery/hero1_t.jpg" itemprop="thumbnail" alt="Image description" />
+                </a>
+                <figcaption itemprop="caption description">
+                  <span class="cap-heading">SAGA</span>
+                  <span class="caption"><strong>Creators</strong> Brian K. Vaughan, Fiona Staples <strong>Publisher</strong> Image.
+            Epic space opera in which two warring alien races hunt down the members of their tribes who dared fall in love and have a baby. Someone’s already described it as “Star Wars meets Game Of Thrones”...</span>
+                </figcaption>
+                                                    
+              </figure>
+            
+              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="HTMLResources/img/components/gallery/hero2.jpg" itemprop="contentUrl" data-size="1024x1211" class="gallery-thumb">
+                    <img src="HTMLResources/img/components/gallery/hero2_t.jpg" itemprop="thumbnail" alt="Image description" />
+                </a>
+                <figcaption itemprop="caption description">
+                  <span class="cap-heading">GRENDEL</span>
+                  <span class="caption"><strong>Creators</strong>  Matt Wagner <strong>Publisher</strong> Comico
+            Then Dark Horse Novelist Hunter Rose by day, criminal mastermind Grendel by night, this series has a strong undercurrent of morality. It’s a little like ’98 serial-killer movie Fallen, but way more stylish.</span>
+                </figcaption>
+              </figure>
+            
+              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="HTMLResources/img/components/gallery/hero3.jpg" itemprop="contentUrl" data-size="1024x1211" class="gallery-thumb">
+                    <img src="HTMLResources/img/components/gallery/hero3_t.jpg" itemprop="thumbnail" alt="Image description" />
+                </a>
+                <figcaption itemprop="caption description">
+                  <span class="cap-heading">GRENDEL</span>
+                  <span class="caption"><strong>Creators</strong>  Matt Wagner <strong>Publisher</strong> Comico
+            Then Dark Horse Novelist Hunter Rose by day, criminal mastermind Grendel by night, this series has a strong undercurrent of morality. It’s a little like ’98 serial-killer movie Fallen, but way more stylish.</span>
+                </figcaption>
+              </figure>
+              <div class="gallery-info">
+                <p>Brad Bird’s filmography, in poster form</p>
+              </div>
+            </div>
+        </div>
+
+
+	</div><!-- .main -->
+	<div class="push"></div> <!-- For sticky footer -->
+</div><!-- .wrapper -->
+
+		<script type="text/javascript" src="HTMLResources/js/lib.min.js"></script>
+		<script type="text/javascript" src="HTMLResources/js/framework.min.js"></script>
+		<script type="text/javascript" src="HTMLResources/js/components.min.js"></script>
+
+	<!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+      <!-- Background of PhotoSwipe. 
+           It's a separate element, as animating opacity is faster than rgba(). -->
+      <div class="pswp__bg"></div>
+
+      <!-- Slides wrapper with overflow:hidden. -->
+      <div class="pswp__scroll-wrap">
+
+          <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+          <div class="pswp__container">
+              <!-- don't modify these 3 pswp__item elements, data is added later on -->
+              <div class="pswp__item"></div>
+              <div class="pswp__item"></div>
+              <div class="pswp__item"></div>
+          </div>
+
+          <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+          <div class="pswp__ui pswp__ui--hidden">
+
+              <div class="pswp__top-bar">
+
+                  <!--  Controls are self-explanatory. Order can be changed. -->
+
+                  <div class="pswp__counter"></div>
+
+                  <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                  <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                  <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                  <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                  <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                  <!-- element will get class pswp__preloader--active when preloader is running -->
+                  <div class="pswp__preloader">
+                      <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                          <div class="pswp__preloader__donut"></div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                  <div class="pswp__share-tooltip"></div> 
+              </div>
+
+              <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+              </button>
+
+              <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+              </button>
+
+              <div class="pswp__caption">
+                  <div class="pswp__caption__center"></div>
+              </div>
+
+              <div class="wrapper-caption">              
+              </div>
+
+            </div>
+          </div>
+      </div>
+	</body>
+</html>

@@ -1,0 +1,152 @@
+  .wrapper {
+    width: 100%;
+    min-height: 100%;
+    margin: 0 auto 0;
+    padding: 0;
+    position: relative;
+    box-sizing: content-box;
+  }
+
+  .main {
+    // min-height: 100%;
+  }
+
+  .row {
+    width: 100%;
+    float: left;
+    font-size: 0; //prevent gap between inline-block elements
+
+    &.relative {
+      position: relative;
+    }
+    &.no-padding {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .pane {
+      display: inline-block;
+      margin-left: 20px;
+      vertical-align: top;
+
+      &.dw-mgZero {
+        margin-left: 0;
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+      &.relative {
+        position: relative;
+      }
+      &.center {
+        text-align: center;
+      }
+    }
+
+    .gutterless .pane {
+      margin-left: 20px;
+    }
+  }
+
+  .row-action {
+    margin-top: 30px;
+  }
+
+  .pane {
+    &.base1 {
+      width: 63px;
+    }
+    &.base2 {
+      width: 146px;
+    }
+    &.base3 {
+      width: 229px;
+    }
+    &.base4 {
+      width: 312px;
+    }
+    &.base5 {
+      width: 395px;
+    }
+    &.base6 {
+      width: 478px;
+    }
+    &.base7 {
+      width: 561px;
+    }
+    &.base8 {
+      width: 644px;
+    }
+    &.base9 {
+      width: 727px;
+    }
+    &.base10 {
+      width: 810px;
+    }
+    &.base11 {
+      width: 893px;
+    }
+    &.base12 {
+      width: 976px;
+    }
+    &.base0 {
+      width: 0;
+      display: none;
+    }
+  }
+ 
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.project-client {
+  margin-bottom: 30px;
+}
+
+@media all and (max-width: 767px) {
+  .pane {
+    &.base1 {
+      width: 100%;
+    }
+    &.base2 {
+      width: 100%;
+    }
+    &.base3 {
+      width: 100%;
+    }
+    &.base4 {
+      width: 100%;
+    }
+    &.base5 {
+      width: 100%;
+    }
+    &.base6 {
+      width: 100%;
+    }
+    &.base7 {
+      width: 100%;
+    }
+    &.base8 {
+      width: 100%;
+    }
+    &.base9 {
+      width: 100%;
+    }
+    &.base10 {
+      width: 100%;
+    }
+    &.base11 {
+      width: 100%;
+    }
+    &.base12 {
+      width: 100%;
+    }
+    &.base0 {
+      width: 0;
+      display: none;
+    }
+  }  
+}
