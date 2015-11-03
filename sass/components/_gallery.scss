@@ -1,8 +1,5 @@
 .component.gallery {
-  width: 100%;
   position: relative;
-  margin: 40px 0 30px;
-  padding: 0 15px;
 
   &.full-width {
     padding: 0;
@@ -15,8 +12,6 @@
     &.gallery-pullout-two {
       .pullout-caption { margin: 0; }
     }
-
-
   }
 
   &.cap {    
@@ -37,20 +32,21 @@
       top: -16px;
 
       .border {
-        background-color: $black;
+        background-color: $gray-base;
       }
       .text {
-        background-color: $black;
-        border-color: $black;
-        color: $white;
+        background-color: $gray-base;
+        border-color: $gray-base;
+        color: $gray-lighter;
       }
     }
 
     .gallery-info {
       p {
-        font-family: 'foundation_sanscondensed';
-        font-size: 1.4rem;
-        line-height: 1.6rem;
+        font-family: $font-family5;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
       }
     }    
   }
@@ -71,32 +67,53 @@
 
     .gallery-info {
       .heading {
-        font-family: 'Knockout67';
-        font-size: 3.6rem;
-        line-height: 4rem;
+        font-family: $font-family1;
+        font-size: 36px;
+        line-height: 36px;
         text-align: center;
       }
       .text, .words {
-        font-family: 'foundation_sanscondensed';
-        font-size: 1.5rem;
-        line-height: 1.7rem;
+        font-family: $font-family5;
+        font-size: 15px;
+        line-height: 17px;
+        font-weight: 400;
         text-align: center;
         text-transform: none;
 
         strong {
-          font-family: 'foundation_sansBlkCn';
-          font-size: 1.4rem;
+          font-family: $font-family3;
+          font-size: 14px;
+          font-weight: 700;
         }
       }
     }
   }
 
+  &.js-modal {
+    .slick-list:before {
+      $icon-font-size: 32px;
+      content: '\F003';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;      
+      font-family: $font-family-icon;
+      font-size: $icon-font-size;
+      line-height: $icon-font-size;
+      margin-top: -$icon-font-size/2;
+      text-align: center;
+      color: $gray-lighter;
+      z-index: 1001;
+      pointer-events: none;
+    }
+  }
+
   .gallery-info {
     padding: 10px 16px;
-    background: $black;
+    background: $brand-primary;
 
     p {
-      color: $white;
+      color: $gray-lighter;
       margin: 0;
       padding: 0;
     }
@@ -104,6 +121,7 @@
 
   .gallery-thumb {
     display: block;
+    position: relative;
 
     &:before {
       content: '';
@@ -112,12 +130,36 @@
       right: 0;
       top: 0;
       bottom: 0;
-      background-color: rgba($black, 0.15);
+      background-color: rgba($gray-base, 0.15);
     }
   }
 
+  h3, h5 {
+    color: $brand-primary;
+  }
+
+  h3 {
+    font-family: $headings-font1;
+    margin-bottom: 0;
+    padding-top: 5px;
+    border-top: 4px solid $brand-primary;
+  }
+
+  h5 {
+    margin-top: 4px;
+    margin-bottom: 5px;
+  }
+
+  .subheading {
+    font-family: 'RobotoCond';
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 400;
+    color: $gray;
+  }
+
   img {
-    // width: 100%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     background-color: inherit;
@@ -126,34 +168,30 @@
   figure {
     display: block;
     margin: 0;
-  }
+  }  
 
   figcaption {
     display: block;
-    padding: 8px 0 0;
-    color: $capGrey;
+    padding: $grid-gutter-width/2 $grid-gutter-width/2 0;
+    color: $gray;
+    font-family: $font-family5;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+  }
 
-    .cap-heading {
-      font-family: 'foundation_sansBlkCn';
-      font-size: 1.2rem;
-      line-height: 1.2rem;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .caption { 
-      display: inline;
-      position: static;
-      font-family: 'foundation_sanscondensed';
-      font-size: 1.3rem;
-      line-height: 1.3rem;
+  .container & {
+    figcaption {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
   .caption {
     position: absolute;
     bottom: -15px;
-    font-size: 1.3rem;
-    line-height: 1.6rem;
+    font-size: 13px;
+    line-height: 16px;
     display: none;
-  }
+  }  
 }

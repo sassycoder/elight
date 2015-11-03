@@ -30,19 +30,19 @@ $(function () {
       "unpinned": "slideOutUp"
     }
   });
-
   // initialise
   headroom.init();
 
   // Init gallery
-  $('.carousel').slick({
+  $('.js-carousel').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    dots: true,
     swipe: false,
     autoplay: true,
     pauseOnHover: false,
-    autoplaySpeed: 50000,
+    autoplaySpeed: 100000,
     infinite: true,
     speed: 500,
     fade: true,

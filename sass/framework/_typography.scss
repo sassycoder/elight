@@ -37,22 +37,22 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'RobotoCondReg';
+  font-family: 'RobotoCond';
   src: url('../fonts/RobotoCondensed-Regular.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'RobotoCondBold';
+  font-family: 'RobotoCond';
   src: url('../fonts/RobotoCondensed-Bold.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: 'RobotoCondItalic';
+  font-family: 'RobotoCond';
   src: url('../fonts/RobotoCondensed-Italic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 400;
+  font-style: italic;
 }
 @font-face {
   font-family: 'MerriweatherLight';
@@ -78,6 +78,34 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'BlackTie';
+  src: url('../fonts/BlackTie-Solid-webfont.eot?v=1.0.0');
+  src: url('../fonts/BlackTie-Solid-webfont.eot?#iefix&v=1.0.0') format('embedded-opentype'), url('../fonts/BlackTie-Solid-webfont.woff2?v=1.0.0') format('woff2'), url('../fonts/BlackTie-Solid-webfont.woff?v=1.0.0') format('woff'), url('../fonts/BlackTie-Solid-webfont.ttf?v=1.0.0') format('truetype'), url('../fonts/BlackTie-Solid-webfont.svg?v=1.0.0#black_tiesolid') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BlackTie';
+  src: url('../fonts/BlackTie-Bold-webfont.eot?v=1.0.0');
+  src: url('../fonts/BlackTie-Bold-webfont.eot?#iefix&v=1.0.0') format('embedded-opentype'), url('../fonts/BlackTie-Bold-webfont.woff2?v=1.0.0') format('woff2'), url('../fonts/BlackTie-Bold-webfont.woff?v=1.0.0') format('woff'), url('../fonts/BlackTie-Bold-webfont.ttf?v=1.0.0') format('truetype'), url('../fonts/BlackTie-Bold-webfont.svg?v=1.0.0#black_tiebold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BlackTie';
+  src: url('../fonts/BlackTie-Regular-webfont.eot?v=1.0.0');
+  src: url('../fonts/BlackTie-Regular-webfont.eot?#iefix&v=1.0.0') format('embedded-opentype'), url('../fonts/BlackTie-Regular-webfont.woff2?v=1.0.0') format('woff2'), url('../fonts/BlackTie-Regular-webfont.woff?v=1.0.0') format('woff'), url('../fonts/BlackTie-Regular-webfont.ttf?v=1.0.0') format('truetype'), url('../fonts/BlackTie-Regular-webfont.svg?v=1.0.0#black_tieregular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BlackTie';
+  src: url('../fonts/BlackTie-Light-webfont.eot?v=1.0.0');
+  src: url('../fonts/BlackTie-Light-webfont.eot?#iefix&v=1.0.0') format('embedded-opentype'), url('../fonts/BlackTie-Light-webfont.woff2?v=1.0.0') format('woff2'), url('../fonts/BlackTie-Light-webfont.woff?v=1.0.0') format('woff'), url('../fonts/BlackTie-Light-webfont.ttf?v=1.0.0') format('truetype'), url('../fonts/BlackTie-Light-webfont.svg?v=1.0.0#black_tielight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
 
 
 
@@ -85,6 +113,7 @@
   font-family: $font-family3;
   font-size: 18px;
   line-height: 18px;
+  font-weight: 700;
   color: $brand-primary;
   -webkit-font-smoothing: antialiased;
 }
@@ -93,6 +122,7 @@
   font-family: $font-family4;
   font-size: 14px;
   line-height: 16px;
+  font-style: italic;
   margin-bottom: 40px;
   color: $gray;
 }

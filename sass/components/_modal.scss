@@ -30,22 +30,28 @@
 
 .wrapper-caption {
   padding: 16px 10px;
+  font-family: 'RobotoCond';
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 400;
+  color: $gray-lighter;
+
+  .container { padding: 0; }
 }
 
 .wrapper-caption .pswp__counter,
 .wrapper-caption .cap-heading {
   display: inline-block;
+  float: left;
   position: static;
   padding: 0;
   opacity: 1;
   height: auto;
-  font-family: 'RobotoCondBold';
-  font-size: 13px;
-  font-size: 1.3rem;
-  line-height: 15px;
-  line-height: 1.5rem;
-  color: #ffffff;
-  //-webkit-font-smoothing: antialiased;
+  font-family: 'RobotoCond';
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 700;
+  padding-right: 5px;
 }
 
 .wrapper-caption .cap-heading {
@@ -55,9 +61,10 @@
 
 .wrapper-caption .caption {
   display: block;
-  font-family: 'RobotoCondReg';
+  font-family: 'RobotoCond';
   font-size: 13px;
   font-size: 1.3rem;
+  font-weight: 400;
   line-height: 15px;
   line-height: 1.5rem;
   color: #ffffff;

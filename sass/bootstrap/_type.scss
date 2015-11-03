@@ -59,7 +59,8 @@ h4, .h4 {
 }
 h5, .h5 { 
   font-family: $headings-font3;
-  font-size: $font-size-h5; 
+  font-size: $font-size-h5;
+  font-weight: 700;
 }
 h6, .h6 { 
   font-family: $headings-font3;
@@ -75,16 +76,17 @@ p {
   margin: 0 0 ($line-height-computed / 2);
 
   strong {
-    font-family: 'MerriweatherBold';
+    font-weight: 700;
   }
 
   em {
-    font-family: 'MerriweatherLightItalic';
+    font-style: italic;
   }
 
   strong em,
   em strong {
-    font-family: 'MerriweatherBoldItalic';
+    font-weight: 700;
+    font-style: italic;
   }
 }
 

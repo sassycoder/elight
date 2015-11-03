@@ -5,9 +5,7 @@
 	.first {
 		font-family: $font-family1;
 		font-size: 36px;
-		font-size: 3.6rem;
 		line-height: 30px;
-		line-height: 3rem;
 		text-align: center;
 		text-transform: uppercase;
 		margin: 0 0 5px 0;
@@ -18,9 +16,8 @@
 	.second {
 		font-family: $font-family3;
 		font-size: 14px;
-		font-size: 1.4rem;
 		line-height: 24px;
-		line-height: 2.4rem;
+		font-weight: 700;
 		text-align: center;
 		text-transform: uppercase;
 		margin: 0;

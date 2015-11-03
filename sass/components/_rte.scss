@@ -11,21 +11,18 @@
 	ol, ul {
 		li { margin-top: 8px; }
 	}
+
 	ul {
+		padding: 0 $grid-gutter-width;
 		li {
 			list-style-type: none;
 			padding-left: ($grid-gutter-width / 2);
+			text-indent: -$grid-gutter-width*1.5;
 			&:before {
 				content: '\f10c';
-		    margin-right: 5px;
+		    padding-right: $grid-gutter-width/2;
 		    color: #00b6e7;
 		    font-family: 'FontAwesome';
-		    font-size: 16px;
-		    font-size: 1.6rem;
-		    line-height: 24px;
-		    line-height: 2.4rem;
-		    position: absolute;
-		    left: 0;
 			}
 		}
 	}
