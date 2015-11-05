@@ -73,11 +73,6 @@
 	height: 100%;
 }
 
-.mejs-mediaelement video {
-	width: 100%!important;
-	height: 101px!important;
-}
-
 .mejs-poster {
 	position: absolute;
 	top: 0;
@@ -104,18 +99,15 @@
 
 .mejs-overlay-play {
 	cursor: pointer;
-	display: block!important;
-	width: 100%!important;
-	height: 101px!important;
 }
 
 .mejs-overlay-button {
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	margin: 0;
+	top: 50%;
+	left: 50%;
+	width: 100px;
+	height: 100px;
+	margin: -50px 0 0 -50px;
 	background: url(../img/structure/bigplay.svg) no-repeat;
 }
 
@@ -1006,4 +998,3 @@ div.mejs-speed-button {
 }
 
 /* End: Skip Back */
-

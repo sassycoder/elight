@@ -2,6 +2,10 @@
 
 var initPhotoSwipeFromDOM = function(gallerySelector) {
     'use strict';
+
+    var hsCount,
+        isHotSpot;
+
     // parse slide data (url, title, size ...) from DOM elements 
     // (children of gallerySelector)
     var parseThumbnailElements = function(el) {
@@ -34,11 +38,14 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
                 bgColor: $(linkEl).css('background-color')
             };
 
-
-
             if(figureEl.children.length > 1) {
                 // <figcaption> content
                 item.title = figureEl.children[1].innerHTML;
+            }
+
+            if(isHotSpot) {
+                // <figcaption> hotspot content
+                item.hotspots = $(figureEl).find('.cqtooltip-wrapper')[0].outerHTML;
             }
 
             if(linkEl.children.length > 0) {
@@ -81,6 +88,9 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
             numChildNodes = childNodes.length,
             nodeIndex = 0,
             index;
+
+            //find out if this is a hotspot component
+            isHotSpot = $(clickedGallery).hasClass('hotspot');
 
         for (var i = 0; i < numChildNodes; i++) {
             if(childNodes[i].nodeType !== 1) {
@@ -140,31 +150,18 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
             firstTime = true;
 
         items = parseThumbnailElements(galleryElement);
-
         // define options (if needed)
         options = {
 
-            // define gallery index (for URL)
-            // galleryUID: galleryElement.getAttribute('data-pswp-uid'),
             history: false,
-            // getThumbBoundsFn: function(index) {
-            //     // See Options -> getThumbBoundsFn section of documentation for more info
-            //     var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
-            //         pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
-            //         rect = thumbnail.getBoundingClientRect();
-
-            //     return {x:rect.left, y:rect.top + pageYScroll, w:rect.width};
-            // },
             closeOnVerticalDrag: false,
-            //showAnimationDuration: 0,
-            //hideAnimationDuration: 0,
             showHideOpacity: true,
             zoomEl: true,
             shareEl: false,
             fullscreenEl: false,
             allowPanToNext: false,
-            preload: [1,3]
-
+            preload: [1,3],
+            tapToToggleControls: isHotSpot ? false : true
         };
 
         // PhotoSwipe opened from URL
@@ -203,6 +200,58 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
             .html('<div class="pswp__counter">' + counter + '</div>' + cap[cap.length - 1].innerHTML);
         }
 
+        function calcZoom () {
+          return gallery.items[0].w / (gallery.getZoomLevel()*gallery.items[0].w);
+        }
+
+        function updateZoom () {
+          $('.pswp__zoom-wrap .hotspot-item').css({
+            '-webkit-transform' : 'translate3d(0, 0, 0) scale(' + calcZoom() + ')',
+            'transform' : 'translate3d(0, 0, 0) scale(' + calcZoom() + ')'
+          });
+        }
+
+        function initHotSpot () {
+          var hs = $('.pswp--open').find('.pswp__zoom-wrap')[0];
+              $(hs).html(gallery.items[0].hotspots);
+              $(hs).find('.cqtooltip-wrapper').css({
+                width: gallery.items[0].w + 'px',
+                height: gallery.items[0].h + 'px'
+              });
+              hsCount = $('.pswp__zoom-wrap .hotspot-item').length;
+              $('.pswp__counter')
+              .html('1/' + hsCount)
+              .append($('.pswp__zoom-wrap .cq-tooltip').eq(0).data('tooltip'));
+
+              $('.pswp__zoom-wrap .hotspot-item').css({
+                '-webkit-transform' : 'translate3d(0, 0, 0) scale(' + calcZoom() + ')',
+                'transform' : 'translate3d(0, 0, 0) scale(' + calcZoom() + ')'
+              }).eq(0).find('.cq-tooltip').addClass('active');
+
+              changeBg(gallery.getCurrentIndex());
+
+          $('.pswp__zoom-wrap .cq-tooltip').on('click', function (e) {
+            var $this = $(this),
+                index = $this.find('i').text(),
+                content = $this.data('tooltip');
+
+            $('.pswp__counter')
+            .html(index + '/' + hsCount)
+            .append(content);
+
+            $('.pswp__zoom-wrap .cq-tooltip').removeClass('active');
+            $this.addClass('active');
+            e.preventDefault();
+          });
+
+          $('.pswp__zoom-wrap').attrchange({
+            trackValues: false,
+            callback: function () {
+                window.requestAnimationFrame(updateZoom);
+            }
+          });
+        }
+
         function pauseGallery () {
           $('.carousel').slick('slickPause');
         }
@@ -212,7 +261,9 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
         }
 
         function changeBg (index) {
-          $('.pswp__img').css('background-color', bgCol[index]);
+            var whichImg;
+            isHotSpot ? whichImg = '.cqtooltip-wrapper img' : '.pswp__img';
+          $(whichImg).css('background-color', bgCol[index]);
         }
 
         // Pass data to PhotoSwipe and initialize it
@@ -235,10 +286,14 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
         gallery.listen('destroy', function() {
             playGallery();
         });
-
+        
         gallery.init();
         moveHeading();
         pauseGallery();
+
+        if (isHotSpot) {
+          initHotSpot();
+        }
     };
 
     // loop through all gallery elements and bind events

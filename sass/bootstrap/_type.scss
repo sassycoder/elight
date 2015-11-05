@@ -117,6 +117,20 @@ mark,
   padding: .2em;
 }
 
+figcaption {
+  display: block;
+  padding: $grid-gutter-width/2 $grid-gutter-width/2 0;
+  color: $gray;
+  font-family: $font-family3;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+
+  p {
+    margin: 0;
+  }
+}
+
 // Alignment
 .text-left           { text-align: left; }
 .text-right          { text-align: right; }
@@ -180,8 +194,7 @@ mark,
 ul,
 ol {
   //margin-top: 0;
-  //margin-bottom: ($line-height-computed / 2);
-  margin: 0;  
+  margin-bottom: ($line-height-computed / 2);
   padding: 0;
   list-style-position: inside;
   ul,

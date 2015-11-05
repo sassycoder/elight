@@ -116,13 +116,16 @@
   font-weight: 700;
   color: $brand-primary;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .component.credits {
-  font-family: $font-family4;
+  font-family: $font-family3;
   font-size: 14px;
   line-height: 16px;
   font-style: italic;
   margin-bottom: 40px;
   color: $gray;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

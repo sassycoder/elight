@@ -224,6 +224,7 @@ h5 {
   line-height: 24px;
   line-height: 2.4rem;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h6 {
@@ -234,6 +235,7 @@ h6 {
   line-height: 2.4rem;
   color: $blue1;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .standfirst,
@@ -245,6 +247,7 @@ h6 {
   line-height: 1.8rem;
   color: $blue1;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .component.credits,
@@ -298,6 +301,7 @@ h6 {
   text-transform: uppercase;
   box-shadow: 1rem 0 0 $black, -1rem 0 0 $black;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   &.wrap {
     display: block;
@@ -418,6 +422,7 @@ ul li,ol li {
     line-height: 3.2rem;
     color: $grey1;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   .section {
@@ -434,6 +439,7 @@ ul li,ol li {
     white-space: nowrap;
     text-overflow: ellipsis;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
     span {
       color: $blue1;
@@ -710,6 +716,7 @@ a.skip:active,a.skip:focus {
   position: relative;
   top: -2px;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   &.unmissable {
     color: $red;

@@ -1,0 +1,15 @@
+.component.back-to-top {
+	margin: 0 0 20px;
+
+	.anchor {
+		display: inline-block;
+		span {
+			display: block;
+			font-family: $font-family-icon;
+			font-size: 32px;
+			font-weight: 400;
+			line-height: 18px;
+			color: $gray-light;
+		}
+	}
+}
