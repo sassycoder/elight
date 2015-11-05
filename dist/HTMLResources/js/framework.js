@@ -33,16 +33,21 @@ $(function () {
   // initialise
   headroom.init();
 
+  $('.js-carousel').on('init', function(event, slick){
+    if ($(this).hasClass('dots')) {
+      slick.setOption('dots', true, true);
+    }
+  });
+
   // Init gallery
   $('.js-carousel').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    dots: true,
     swipe: false,
     autoplay: true,
     pauseOnHover: false,
-    autoplaySpeed: 100000,
+    autoplaySpeed: 4000,
     infinite: true,
     speed: 500,
     fade: true,

@@ -1,0 +1,11 @@
+.component.pull-out-box {
+	padding: $grid-gutter-width;
+	border: 1px solid $brand-primary;
+	color: $brand-primary;
+	margin: 0 0 30px;
+
+	.h2 {
+		text-align: center;
+		margin: 0;
+	}
+}

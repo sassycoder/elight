@@ -1,5 +1,6 @@
 .component.gallery {
   position: relative;
+  margin: 0 0 30px 0;
 
   &.full-width {
     padding: 0;
@@ -158,6 +159,10 @@
     color: $gray;
   }
 
+  .slick-dots {
+    border-bottom: 1px solid $brand-primary;
+  }
+
   img {
     width: 100%;
     height: auto;
@@ -178,6 +183,10 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 17px;
+
+    p {
+      margin: 0;
+    }
   }
 
   .container & {
