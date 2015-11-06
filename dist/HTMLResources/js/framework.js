@@ -33,16 +33,11 @@ $(function () {
   // initialise
   headroom.init();
 
-  $('.js-carousel').on('init', function(event, slick){
-    if ($(this).hasClass('dots')) {
-      slick.setOption('dots', true, true);
-    }
-  });
-
   // Init gallery
   $('.js-carousel').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
+    adaptiveHeight: true,
     arrows: false,
     swipe: false,
     autoplay: true,
@@ -53,6 +48,40 @@ $(function () {
     fade: true,
     slide: 'figure',
     cssEase: 'linear'
+  });
+
+    // Init gallery
+  $('.js-dots-carousel').slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    adaptiveHeight: true,
+    arrows: false,
+    swipe: false,
+    autoplay: true,
+    pauseOnHover: false,
+    autoplaySpeed: 100000,
+    infinite: true,
+    speed: 500,
+    fade: false,
+    dots: true,
+    slide: 'figure',    
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          fade: true
+        }
+      }
+    ]
   });
 
   //wrap highlighted text in <p> to align center

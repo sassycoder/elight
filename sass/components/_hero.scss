@@ -1,5 +1,9 @@
 .component.hero {
 	.component.gallery {
 		figcaption { display: none; }
+
+		img {
+			// max-height: 768px;
+		}
 	}
 }
