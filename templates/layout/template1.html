@@ -18,24 +18,34 @@
   	         <div class="component gallery js-carousel js-modal" itemscope itemtype="http://schema.org/ImageGallery">
               <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                 <a href="HTMLResources/img/components/gallery/hero.jpg" itemprop="contentUrl" data-size="768x768" class="gallery-thumb">
-                    <img src="HTMLResources/img/components/gallery/hero.jpg" itemprop="thumbnail" alt="Image description" class="img-responsive" />
-                    <div class="container intro">
-                      <h1>Heading One EYE stalked the wolf</h1>
-                      <p class="standfirst">Stand First, the different lines were rapidly approaching a point, somewhere out there in the snow.</p>
-                    </div>
+                  <picture>
+                    <source srcset="HTMLResources/img/components/gallery/hero-xl.jpg" media="(min-width: 769px)">
+                    <source srcset="HTMLResources/img/components/gallery/hero-l.jpg" media="(min-width: 480px)">
+                    <img srcset="HTMLResources/img/components/gallery/hero.jpg" itemprop="thumbnail" alt="…" class="img-responsive">
+                  </picture>                
                 </a>
                 <figcaption itemprop="caption description">
                   <p>Call of the wild: the grey wolf could help regulate deer numbers. Photograph: Alamy</p>
                 </figcaption>
+                <div class="container intro hidden-xs">
+                  <h1>Heading One EYE<br>stalked the wolf</h1>
+                  <p class="standfirst">Stand First, the different lines were rapidly approaching a point, somewhere out there in the snow.</p>
+                  <!--(bake /templates/components/_arrow-down.html)-->
+                </div>
               </figure>
 
               <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                 <a href="HTMLResources/img/components/gallery/hero-long.jpg" itemprop="contentUrl" data-size="768x1024" class="gallery-thumb">
-                    <img src="HTMLResources/img/components/gallery/hero-long.jpg" itemprop="thumbnail" alt="Image description" class="img-responsive" />
+                  <img src="HTMLResources/img/components/gallery/hero-long.jpg" itemprop="thumbnail" alt="Image description" class="img-responsive" />                            
                 </a>
                 <figcaption itemprop="caption description">
                   <p>Call of the wild: the grey wolf could help regulate deer numbers. Photograph: Alamy</p>
                 </figcaption>
+                <div class="container intro arrow hidden-xs">
+                  <h1>Heading One EYE stalked the wolf</h1>
+                  <p class="standfirst">Stand First, the different lines were rapidly approaching a point, somewhere out there in the snow.</p>
+                  <!--(bake /templates/components/_arrow-down.html)-->
+                </div>
               </figure>
             </div>
   				</div><!-- #hero -->

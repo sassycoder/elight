@@ -39,7 +39,7 @@ $(function () {
     slidesToScroll: 1,
     adaptiveHeight: true,
     arrows: false,
-    swipe: false,
+    swipe: true,
     autoplay: true,
     pauseOnHover: false,
     autoplaySpeed: 100000,
