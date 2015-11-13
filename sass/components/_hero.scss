@@ -1,5 +1,17 @@
 .component.hero {
+	max-width: 100%;
+
+	.intro {
+		position: absolute;
+		bottom: 50px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		color: $gray-lighter;
+	}
+
 	.component.gallery {
+		max-width: 100%;
 		figcaption { display: none; }
 
 		img {

@@ -81,12 +81,16 @@
 .slick-slide
 {
     display: none;
-    float: left;
-
-    padding: 0 $grid-gutter-width/2;
+    float: left;   
 
     height: 100%;
     min-height: 1px;
+
+    @media (min-width: $screen-sm-min) {
+        .js-dots-carousel & {
+            padding: 0 $grid-gutter-width/2;
+        }
+    }
 }
 [dir='rtl'] .slick-slide
 {
@@ -94,8 +98,8 @@
 }
 .slick-slide img
 {
-    display: block;
-    width: 100%;
+    // display: block;
+    // width: 100%;
 }
 .slick-slide.slick-loading img
 {

@@ -4,6 +4,12 @@
 	font-family: $font-family3;
 	font-size: 13px;
 	line-height: 17px;
+	width: 100%;
+	float: left;
+
+	@media (min-width: $screen-sm-min) {
+		width: 50%;
+	}
 
 	&.with-tint {
 		background: $gray-base;
@@ -20,6 +26,8 @@
 		right: 0;
 		top: 0;
 		bottom: 0;
+		cursor: pointer;
+		z-index: $zindex-popover;
 	}
 
 	.bg {
@@ -31,7 +39,8 @@
 		top: 0;
 		left: 0;
 		right: 0;
-		padding-top: $grid-gutter-width;
+		width: auto;
+		padding: $grid-gutter-width;
 	}
 
 	.title {

@@ -27,7 +27,7 @@ $brand-danger:          #d9534f !default;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #fff !default;
+$body-bg:               #000 !default;
 //** Global text color on `<body>`.
 $text-color:            $gray-base !default;
 
@@ -66,11 +66,8 @@ $font-size-h1:            floor(($font-size-base * 2.75)) !default; // ~44px
 $font-size-h2:            floor(($font-size-base * 2.25)) !default; // ~36px
 $font-size-h3:            ceil(($font-size-base * 2.25)) !default; // ~36px
 $font-size-h4:            ceil(($font-size-base * 1.75)) !default; // ~28px
-$font-size-h5:            ceil(($font-size-base * 1.38)) !default; // ~22px
+$font-size-h5:            ceil(($font-size-base * 1.25)) !default; // ~20px
 $font-size-h6:            ceil(($font-size-base * 1.25)) !default; // ~20px
-
-$font-size-intro-heading:	ceil(($font-size-base * 4.5)) !default; // ~72px
-$font-size-intro-sf:			$font-size-h5; // ~22px
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.5 !default; // 24/16

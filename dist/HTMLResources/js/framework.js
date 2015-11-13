@@ -42,7 +42,7 @@ $(function () {
     swipe: false,
     autoplay: true,
     pauseOnHover: false,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 100000,
     infinite: true,
     speed: 500,
     fade: true,
