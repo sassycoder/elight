@@ -1,6 +1,7 @@
 .skip {
   position: absolute;
-  left: -999em
+  left: -999em;
+  z-index: $zindex-navbar;
 }
 
 a.skip:active,a.skip:focus {

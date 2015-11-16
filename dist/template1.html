@@ -14,9 +14,8 @@
 		<link type="text/css" rel="stylesheet" href="HTMLResources/css/main.css">
 </head>
 
-<body class="theme1">
-	<div><a href="#skipnav" class="skip">Skip to main content</a></div>
-
+<body>
+  <div><a href="#skipnav" class="skip">Skip to main content</a></div>
 		<div class="wrapper">
 
 			<nav class="navbar navbar-default navbar-fixed-top js-main-nav">
@@ -44,13 +43,13 @@
 			    </div><!-- /.navbar-collapse -->
 			  </div><!-- /.container-fluid -->
 			</nav>
-
+      
 			<div id="main">
 		    <a id="skipnav" tabindex="-1"></a>
 
   		    <div class="component hero">
   	         <div class="component gallery js-carousel js-modal" itemscope itemtype="http://schema.org/ImageGallery">
-              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="text-center">
                 <a href="HTMLResources/img/components/gallery/hero.jpg" itemprop="contentUrl" data-size="768x768" class="gallery-thumb">
                   <picture>
                     <source srcset="HTMLResources/img/components/gallery/hero-xl.jpg" media="(min-width: 769px)">
@@ -58,7 +57,7 @@
                     <img srcset="HTMLResources/img/components/gallery/hero.jpg" itemprop="thumbnail" alt="…" class="img-responsive">
                   </picture>                
                 </a>
-                <figcaption itemprop="caption description">
+                <figcaption itemprop="caption description" class="text-left">
                   <p>Call of the wild: the grey wolf could help regulate deer numbers. Photograph: Alamy</p>
                 </figcaption>
                 <div class="container intro hidden-xs">
@@ -72,11 +71,15 @@
                 </div>
               </figure>
 
-              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="text-center">
                 <a href="HTMLResources/img/components/gallery/hero-long.jpg" itemprop="contentUrl" data-size="768x1024" class="gallery-thumb">
-                  <img src="HTMLResources/img/components/gallery/hero-long.jpg" itemprop="thumbnail" alt="Image description" class="img-responsive" />                            
+                  <picture>
+                    <source srcset="HTMLResources/img/components/gallery/hero-long.jpg" media="(min-width: 769px)">
+                    <source srcset="HTMLResources/img/components/gallery/hero-long.jpg" media="(min-width: 480px)">
+                    <img srcset="HTMLResources/img/components/gallery/hero-long.jpg" itemprop="thumbnail" alt="…" class="img-responsive">
+                  </picture>                         
                 </a>
-                <figcaption itemprop="caption description">
+                <figcaption itemprop="caption description" class="text-left">
                   <p>Call of the wild: the grey wolf could help regulate deer numbers. Photograph: Alamy</p>
                 </figcaption>
                 <div class="container intro arrow hidden-xs">
@@ -93,6 +96,9 @@
   				</div><!-- #hero -->
 
           <div class="container">
+            <div class="component rte">
+              <p class="component credits">Credits, transcribed from the 1915 Methuen and Co edition by  David Price, Photography Marie Knotková, Illustrations Jan-Erik Jansson</p>
+            </div>
             <h1 class="component">Heading One EYE stalked the wolf</h1>
 
             <div class="row">
@@ -102,8 +108,7 @@
             </div>            
 
             <div class="component rte">
-              <p class="component standfirst">Stand First, the different lines were rapidly approaching a point, somewhere out there in the snow.</p>
-              <p class="component credits">Credits, transcribed from the 1915 Methuen and Co edition by  David Price, Photography Marie Knotková,  Illustrations Jan-Erik Jansson</p>       
+              <p class="component standfirst">Stand First, the different lines were rapidly approaching a point, somewhere out there in the snow.</p>                     
               <p>Dark spruce forest frowned on either side the frozen waterway. The trees had been stripped by a recent wind of their white covering of frost, and they seemed to lean towards each other, black and ominous, in the fading light. A vast silence reigned over the land. The land itself was a desolation, lifeless, without movement, so lone and cold that the spirit of it was not even that of sadness.</p>
               <p>They travelled on without speech, saving their breath for the work of their bodies. On every side was the silence, pressing upon them with a tangible presence. It affected their minds as the many atmospheres of deep water affect the body of the diver. It crushed them with the weight of unending vastness and unalterable decree.</p>
             </div> <!-- .rte -->
@@ -155,9 +160,9 @@
             </div> <!-- .rte -->
 
             <blockquote class="component">
-              <p class="first">“Eyelashes and cheeks and lips were so coated with the crystals from their frozen breath”</p>
-              <p class="second">Jack London</p>
-            </blockquote>
+              <p class="first text-center">“Eyelashes and cheeks and lips were so coated with the crystals from their frozen breath”</p>
+              <p class="second text-center">Jack London</p>
+            </blockquote>            
           
             <div class="component rte"> 
               <p>But at front and rear, unawed and indomitable, toiled the two men who were not yet dead. Their bodies were covered with fur and soft-tanned leather. Eyelashes and cheeks and lips were so coated with the crystals from their frozen breath that their faces were not discernible.</p>
@@ -179,82 +184,113 @@
               <div class="text"></div>
             </div>
             
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="text-center">
               <a href="HTMLResources/img/components/gallery/gallery-pullout1.jpg" itemprop="contentUrl" data-size="799x1226" class="gallery-thumb">
-                  <img src="HTMLResources/img/components/gallery/gallery-pullout_1.jpg" itemprop="thumbnail" alt="Image description" class="img-responsive" />
+                <picture>
+                  <source srcset="HTMLResources/img/components/gallery/gallery-pullout_1.jpg" media="(min-width: 769px)">
+                  <source srcset="HTMLResources/img/components/gallery/gallery-pullout_1.jpg" media="(min-width: 480px)">
+                  <img srcset="HTMLResources/img/components/gallery/gallery-pullout_1.jpg" itemprop="thumbnail" alt="…" class="img-responsive">
+                </picture>
               </a>
-              <figcaption itemprop="caption description">
+              <figcaption itemprop="caption description" class="text-left">
                 <p>Call of the wild: the grey wolf could help regulate deer numbers. Photograph: Alamy</p>
               </figcaption>                                       
             </figure>
           
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="text-center">
               <a href="HTMLResources/img/components/gallery/gallery-pullout2.jpg" itemprop="contentUrl" data-size="801x1231" class="gallery-thumb">
-                  <img src="HTMLResources/img/components/gallery/gallery-pullout_2.jpg" itemprop="thumbnail" alt="Image description" class="img-responsive" />
+                <picture>
+                  <source srcset="HTMLResources/img/components/gallery/gallery-pullout_2.jpg" media="(min-width: 769px)">
+                  <source srcset="HTMLResources/img/components/gallery/gallery-pullout_2.jpg" media="(min-width: 480px)">
+                  <img srcset="HTMLResources/img/components/gallery/gallery-pullout_2.jpg" itemprop="thumbnail" alt="…" class="img-responsive">
+                </picture>
               </a>
-              <figcaption itemprop="caption description">
+              <figcaption itemprop="caption description" class="text-left">
                 <p>Call of the wild: the grey wolf could help regulate deer numbers. Photograph: Alamy</p>
               </figcaption>                                        
             </figure>
           
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="text-center">
               <a href="HTMLResources/img/components/gallery/gallery-pullout3.jpg" itemprop="contentUrl" data-size="814x1254" class="gallery-thumb">
-                  <img src="HTMLResources/img/components/gallery/gallery-pullout_3.jpg" itemprop="thumbnail" alt="Image description" class="img-responsive" />
+                <picture>
+                  <source srcset="HTMLResources/img/components/gallery/gallery-pullout_3.jpg" media="(min-width: 769px)">
+                  <source srcset="HTMLResources/img/components/gallery/gallery-pullout_3.jpg" media="(min-width: 480px)">
+                  <img srcset="HTMLResources/img/components/gallery/gallery-pullout_3.jpg" itemprop="thumbnail" alt="…" class="img-responsive">
+                </picture>
               </a>
-              <figcaption itemprop="caption description">
+              <figcaption itemprop="caption description" class="text-left">
                 <p>Call of the wild: the grey wolf could help regulate deer numbers. Photograph: Alamy</p>
               </figcaption>                                       
             </figure>
           
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="text-center">
               <a href="HTMLResources/img/components/gallery/gallery-pullout4.jpg" itemprop="contentUrl" data-size="814x1241" class="gallery-thumb">
-                  <img src="HTMLResources/img/components/gallery/gallery-pullout_4.jpg" itemprop="thumbnail" alt="Image description" class="img-responsive" />
+                <picture>
+                  <source srcset="HTMLResources/img/components/gallery/gallery-pullout_4.jpg" media="(min-width: 769px)">
+                  <source srcset="HTMLResources/img/components/gallery/gallery-pullout_4.jpg" media="(min-width: 480px)">
+                  <img srcset="HTMLResources/img/components/gallery/gallery-pullout_4.jpg" itemprop="thumbnail" alt="…" class="img-responsive">
+                </picture>
               </a>
-              <figcaption itemprop="caption description">
+              <figcaption itemprop="caption description" class="text-left">
                 <p>Call of the wild: the grey wolf could help regulate deer numbers. Photograph: Alamy</p>
               </figcaption>                                       
             </figure>
           
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="text-center">
               <a href="HTMLResources/img/components/gallery/gallery-pullout5.jpg" itemprop="contentUrl" data-size="814x1240" class="gallery-thumb">
-                  <img src="HTMLResources/img/components/gallery/gallery-pullout_5.jpg" itemprop="thumbnail" alt="Image description" class="img-responsive" />
+                <picture>
+                  <source srcset="HTMLResources/img/components/gallery/gallery-pullout_5.jpg" media="(min-width: 769px)">
+                  <source srcset="HTMLResources/img/components/gallery/gallery-pullout_5.jpg" media="(min-width: 480px)">
+                  <img srcset="HTMLResources/img/components/gallery/gallery-pullout_5.jpg" itemprop="thumbnail" alt="…" class="img-responsive">
+                </picture>
               </a>
-              <figcaption itemprop="caption description">
+              <figcaption itemprop="caption description" class="text-left">
                 <p>Call of the wild: the grey wolf could help regulate deer numbers. Photograph: Alamy</p>
               </figcaption>                                        
             </figure>
           
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="text-center">
               <a href="HTMLResources/img/components/gallery/gallery-pullout6.jpg" itemprop="contentUrl" data-size="814x1183" class="gallery-thumb">
-                  <img src="HTMLResources/img/components/gallery/gallery-pullout_6.jpg" itemprop="thumbnail" alt="Image description" class="img-responsive" />
+                <picture>
+                  <source srcset="HTMLResources/img/components/gallery/gallery-pullout_6.jpg" media="(min-width: 769px)">
+                  <source srcset="HTMLResources/img/components/gallery/gallery-pullout_6.jpg" media="(min-width: 480px)">
+                  <img srcset="HTMLResources/img/components/gallery/gallery-pullout_6.jpg" itemprop="thumbnail" alt="…" class="img-responsive">
+                </picture>
               </a>
-              <figcaption itemprop="caption description">
+              <figcaption itemprop="caption description" class="text-left">
                 <p>Call of the wild: the grey wolf could help regulate deer numbers. Photograph: Alamy</p>
               </figcaption>                                        
             </figure>
           
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="text-center">
               <a href="HTMLResources/img/components/gallery/gallery-pullout7.jpg" itemprop="contentUrl" data-size="814x1221" class="gallery-thumb">
-                  <img src="HTMLResources/img/components/gallery/gallery-pullout_7.jpg" itemprop="thumbnail" alt="Image description" class="img-responsive" />
+                <picture>
+                  <source srcset="HTMLResources/img/components/gallery/gallery-pullout_7.jpg" media="(min-width: 769px)">
+                  <source srcset="HTMLResources/img/components/gallery/gallery-pullout_7.jpg" media="(min-width: 480px)">
+                  <img srcset="HTMLResources/img/components/gallery/gallery-pullout_7.jpg" itemprop="thumbnail" alt="…" class="img-responsive">
+                </picture>
               </a>
-              <figcaption itemprop="caption description">
+              <figcaption itemprop="caption description" class="text-left">
                 <p>Call of the wild: the grey wolf could help regulate deer numbers. Photograph: Alamy</p>
               </figcaption>                                        
             </figure>
           
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="text-center">
               <a href="HTMLResources/img/components/gallery/gallery-pullout8.jpg" itemprop="contentUrl" data-size="814x1252" class="gallery-thumb">
-                  <img src="HTMLResources/img/components/gallery/gallery-pullout_8.jpg" itemprop="thumbnail" alt="Image description" class="img-responsive" />
+                <picture>
+                  <source srcset="HTMLResources/img/components/gallery/gallery-pullout_8.jpg" media="(min-width: 769px)">
+                  <source srcset="HTMLResources/img/components/gallery/gallery-pullout_8.jpg" media="(min-width: 480px)">
+                  <img srcset="HTMLResources/img/components/gallery/gallery-pullout_8.jpg" itemprop="thumbnail" alt="…" class="img-responsive">
+                </picture>
               </a>
-              <figcaption itemprop="caption description">
+              <figcaption itemprop="caption description" class="text-left">
                 <p>Call of the wild: the grey wolf could help regulate deer numbers. Photograph: Alamy</p>
               </figcaption>                                       
             </figure>
-          
             
               <div class="gallery-info">
-                <p class="heading">NEW UNIVERSES?</p>
-                <p class="text">Gray wolves range in color from grizzled gray or black to all-white. <em>By</em> Helen O’Hara</p>
+                <p class="heading text-center">NEW UNIVERSES?</p>
+                <p class="text text-center">Gray wolves range in color from grizzled gray or black to all-white. <em>By</em> Helen O’Hara</p>
               </div>
           </div>
 
@@ -265,11 +301,15 @@
           </div>
 
           <div class="component gallery" itemscope itemtype="http://schema.org/ImageGallery">
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="text-center">
               <a href="HTMLResources/img/components/gallery/hero3.jpg" itemprop="contentUrl" data-size="1200x1210" class="gallery-thumb">
-                  <img src="HTMLResources/img/components/gallery/hero3_t.jpg" itemprop="thumbnail" alt="Image description" class="img-responsive"/>
+              	<picture>
+                  <source srcset="HTMLResources/img/components/gallery/hero3_t.jpg" media="(min-width: 769px)">
+                  <source srcset="HTMLResources/img/components/gallery/hero3_t.jpg" media="(min-width: 480px)">
+                  <img srcset="HTMLResources/img/components/gallery/hero3_t.jpg" itemprop="thumbnail" alt="…" class="img-responsive">
+                </picture>
               </a>
-              <figcaption itemprop="caption description">
+              <figcaption itemprop="caption description" class="text-left">
                 <p>Call of the wild: the grey wolf could help regulate deer numbers. Photograph: Alamy</p>
               </figcaption>
             </figure>	  
@@ -282,30 +322,42 @@
           </div>
 
           <div class="component gallery js-carousel js-modal" itemscope itemtype="http://schema.org/ImageGallery">
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="text-center">
               <a href="HTMLResources/img/components/gallery/hero1.jpg" itemprop="contentUrl" data-size="1200x1210" class="gallery-thumb">
-                  <img src="HTMLResources/img/components/gallery/hero1_t.jpg" itemprop="thumbnail" alt="Image description" class="img-responsive" />
+                <picture>
+                  <source srcset="HTMLResources/img/components/gallery/hero1_t.jpg" media="(min-width: 769px)">
+                  <source srcset="HTMLResources/img/components/gallery/hero1_t.jpg" media="(min-width: 480px)">
+                  <img srcset="HTMLResources/img/components/gallery/hero1_t.jpg" itemprop="thumbnail" alt="…" class="img-responsive">
+                </picture>
               </a>
-              <figcaption itemprop="caption description">
+              <figcaption itemprop="caption description" class="text-left">
                 <p>Call of the wild: the grey wolf could help regulate deer numbers. Photograph: Alamy</p>
               </figcaption>
                                                   
             </figure>
           
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="text-center">
               <a href="HTMLResources/img/components/gallery/hero2.jpg" itemprop="contentUrl" data-size="1024x1211" class="gallery-thumb">
-                  <img src="HTMLResources/img/components/gallery/hero2_t.jpg" itemprop="thumbnail" alt="Image description" class="img-responsive" />
+                <picture>
+                  <source srcset="HTMLResources/img/components/gallery/hero2_t.jpg" media="(min-width: 769px)">
+                  <source srcset="HTMLResources/img/components/gallery/hero2_t.jpg" media="(min-width: 480px)">
+                  <img srcset="HTMLResources/img/components/gallery/hero2_t.jpg" itemprop="thumbnail" alt="…" class="img-responsive">
+                </picture>
               </a>
-              <figcaption itemprop="caption description">
+              <figcaption itemprop="caption description" class="text-left">
                 <p>Call of the wild: the grey wolf could help regulate deer numbers. Photograph: Alamy</p>
               </figcaption>
             </figure>
           
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="text-center">
               <a href="HTMLResources/img/components/gallery/hero3.jpg" itemprop="contentUrl" data-size="1024x1211" class="gallery-thumb">
-                  <img src="HTMLResources/img/components/gallery/hero3_t.jpg" itemprop="thumbnail" alt="Image description" class="img-responsive" />
+                <picture>
+                  <source srcset="HTMLResources/img/components/gallery/hero3_t.jpg" media="(min-width: 769px)">
+                  <source srcset="HTMLResources/img/components/gallery/hero3_t.jpg" media="(min-width: 480px)">
+                  <img srcset="HTMLResources/img/components/gallery/hero3_t.jpg" itemprop="thumbnail" alt="…" class="img-responsive">
+                </picture>
               </a>
-              <figcaption itemprop="caption description">
+              <figcaption itemprop="caption description" class="text-left">
                 <p>Call of the wild: the grey wolf could help regulate deer numbers. Photograph: Alamy</p>
               </figcaption>
             </figure>
@@ -323,11 +375,15 @@
               <div class="component rte">
                 <div class="col-sm-6">
                   <div class="component gallery" itemscope itemtype="http://schema.org/ImageGallery">
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="text-center">
                       <a href="HTMLResources/img/components/gallery/hero3.jpg" itemprop="contentUrl" data-size="1200x1210" class="gallery-thumb">
-                          <img src="HTMLResources/img/components/gallery/hero3_t.jpg" itemprop="thumbnail" alt="Image description" class="img-responsive"/>
+                      	<picture>
+                          <source srcset="HTMLResources/img/components/gallery/hero3_t.jpg" media="(min-width: 769px)">
+                          <source srcset="HTMLResources/img/components/gallery/hero3_t.jpg" media="(min-width: 480px)">
+                          <img srcset="HTMLResources/img/components/gallery/hero3_t.jpg" itemprop="thumbnail" alt="…" class="img-responsive">
+                        </picture>
                       </a>
-                      <figcaption itemprop="caption description">
+                      <figcaption itemprop="caption description" class="text-left">
                         <p>Call of the wild: the grey wolf could help regulate deer numbers. Photograph: Alamy</p>
                       </figcaption>
                     </figure>	  
@@ -345,61 +401,85 @@
               <h3>Carousel Component</h3>
               <p class="subheading">List subheading.  At the rear of the sled toiled a second man. On the sled, in the box</p>
             
-              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="text-center">
                 <a href="HTMLResources/img/components/gallery/hero1.jpg" itemprop="contentUrl" data-size="1200x1210" class="gallery-thumb">
-                  <img src="HTMLResources/img/components/gallery/hero1_t.jpg" itemprop="thumbnail" alt="Image description" class="img-responsive" />
+                  <picture>
+                    <source srcset="HTMLResources/img/components/gallery/hero1_t.jpg" media="(min-width: 769px)">
+                    <source srcset="HTMLResources/img/components/gallery/hero1_t.jpg" media="(min-width: 480px)">
+                    <img srcset="HTMLResources/img/components/gallery/hero1_t.jpg" itemprop="thumbnail" alt="…" class="img-responsive">
+                  </picture>
                 </a>
-                <figcaption itemprop="caption description">
+                <figcaption itemprop="caption description" class="text-left">
                   <h5>Item Heading, Footnotes</h5>
                   <p><strong>Description.</strong> An hour went by, and a second hour. The pale light of the short sunless day was beginning to fade, when a faint .</p>
                 </figcaption>                                        
               </figure>
             
-              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="text-center">
                 <a href="HTMLResources/img/components/gallery/hero2.jpg" itemprop="contentUrl" data-size="1024x1211" class="gallery-thumb">
-                  <img src="HTMLResources/img/components/gallery/hero2_t.jpg" itemprop="thumbnail" alt="Image description" class="img-responsive" />
+                  <picture>
+                    <source srcset="HTMLResources/img/components/gallery/hero2_t.jpg" media="(min-width: 769px)">
+                    <source srcset="HTMLResources/img/components/gallery/hero2_t.jpg" media="(min-width: 480px)">
+                    <img srcset="HTMLResources/img/components/gallery/hero2_t.jpg" itemprop="thumbnail" alt="…" class="img-responsive">
+                  </picture>
                 </a>
-                <figcaption itemprop="caption description">
+                <figcaption itemprop="caption description" class="text-left">
                   <h5>Item Heading 2, Footnotes with a much longer description</h5>
                   <p class="subheading">Call of the wild 2: the grey wolf could help regulate deer numbers 2. Photograph: Alamy 2</p>
                 </figcaption>
               </figure>
             
-              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="text-center">
                 <a href="HTMLResources/img/components/gallery/gallery-pullout3.jpg" itemprop="contentUrl" data-size="814x1254" class="gallery-thumb">
-                  <img src="HTMLResources/img/components/gallery/gallery-pullout_3.jpg" itemprop="thumbnail" alt="Image description" class="img-responsive" />
+                  <picture>
+                    <source srcset="HTMLResources/img/components/gallery/gallery-pullout_3.jpg" media="(min-width: 769px)">
+                    <source srcset="HTMLResources/img/components/gallery/gallery-pullout_3.jpg" media="(min-width: 480px)">
+                    <img srcset="HTMLResources/img/components/gallery/gallery-pullout_3.jpg" itemprop="thumbnail" alt="…" class="img-responsive">
+                  </picture>
                 </a>
-                <figcaption itemprop="caption description">
+                <figcaption itemprop="caption description" class="text-left">
                   <h5>Item Heading 2, Footnotes with a much longer description</h5>
                   <p class="subheading">Call of the wild 2: the grey wolf could help regulate deer numbers 2. Photograph: Alamy 2</p>
                 </figcaption>
               </figure>
             
-              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="text-center">
                 <a href="HTMLResources/img/components/gallery/gallery-pullout4.jpg" itemprop="contentUrl" data-size="814x1241" class="gallery-thumb">
-                  <img src="HTMLResources/img/components/gallery/gallery-pullout_4.jpg" itemprop="thumbnail" alt="Image description" class="img-responsive" />
+                  <picture>
+                    <source srcset="HTMLResources/img/components/gallery/gallery-pullout_4.jpg" media="(min-width: 769px)">
+                    <source srcset="HTMLResources/img/components/gallery/gallery-pullout_4.jpg" media="(min-width: 480px)">
+                    <img srcset="HTMLResources/img/components/gallery/gallery-pullout_4.jpg" itemprop="thumbnail" alt="…" class="img-responsive">
+                  </picture>
                 </a>
-                <figcaption itemprop="caption description">
+                <figcaption itemprop="caption description" class="text-left">
                   <h5>Item Heading 2, Footnotes with a much longer description</h5>
                   <p class="subheading">Call of the wild 2: the grey wolf could help regulate deer numbers 2. Photograph: Alamy 2</p>
                 </figcaption>
               </figure>
             
-              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="text-center">
                 <a href="HTMLResources/img/components/gallery/gallery-pullout5.jpg" itemprop="contentUrl" data-size="814x1240" class="gallery-thumb">
-                  <img src="HTMLResources/img/components/gallery/gallery-pullout_5.jpg" itemprop="thumbnail" alt="Image description" class="img-responsive" />
+                  <picture>
+                    <source srcset="HTMLResources/img/components/gallery/gallery-pullout_5.jpg" media="(min-width: 769px)">
+                    <source srcset="HTMLResources/img/components/gallery/gallery-pullout_5.jpg" media="(min-width: 480px)">
+                    <img srcset="HTMLResources/img/components/gallery/gallery-pullout_5.jpg" itemprop="thumbnail" alt="…" class="img-responsive">
+                  </picture>
                 </a>
-                <figcaption itemprop="caption description">
+                <figcaption itemprop="caption description" class="text-left">
                   <h5>Item Heading 2, Footnotes with a much longer description</h5>
                   <p class="subheading">Call of the wild 2: the grey wolf could help regulate deer numbers 2. Photograph: Alamy 2</p>
                 </figcaption>
               </figure>
             
-              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="text-center">
                 <a href="HTMLResources/img/components/gallery/gallery-pullout6.jpg" itemprop="contentUrl" data-size="814x1183" class="gallery-thumb">
-                  <img src="HTMLResources/img/components/gallery/gallery-pullout_6.jpg" itemprop="thumbnail" alt="Image description" class="img-responsive" />
+                  <picture>
+                    <source srcset="HTMLResources/img/components/gallery/gallery-pullout_6.jpg" media="(min-width: 769px)">
+                    <source srcset="HTMLResources/img/components/gallery/gallery-pullout_6.jpg" media="(min-width: 480px)">
+                    <img srcset="HTMLResources/img/components/gallery/gallery-pullout_6.jpg" itemprop="thumbnail" alt="…" class="img-responsive">
+                  </picture>
                 </a>
-                <figcaption itemprop="caption description">
+                <figcaption itemprop="caption description" class="text-left">
                   <h5>Item Heading 2, Footnotes with a much longer description</h5>
                   <p class="subheading">Call of the wild 2: the grey wolf could help regulate deer numbers 2. Photograph: Alamy 2</p>
                 </figcaption>
@@ -407,7 +487,7 @@
             </div>
 
             <div class="component pull-out-box">
-            	<p class="h2">Pull out box</p>
+            	<p class="h2 text-center">Pull out box</p>
             	<p>But at front and rear, unawed and indomitable, toiled the two men who were not yet dead. Their bodies were covered with fur and soft-tanned leather. Eyelashes and cheeks and lips were so coated with the crystals from their frozen breath that their faces were not discernible.</p>
             </div>
 
@@ -493,11 +573,15 @@
           </div>
 
           <div class="component gallery" itemscope itemtype="http://schema.org/ImageGallery">
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="text-center">
               <a href="HTMLResources/img/components/gallery/reviewimage1.png" itemprop="contentUrl" data-size="1200x1210" class="gallery-thumb" style="background-color: #f8f8f8;">
-                  <img src="HTMLResources/img/components/gallery/reviewimage1_t.png" itemprop="thumbnail" alt="Image description" class="img-responsive" />
+              	<picture>
+                  <source srcset="HTMLResources/img/components/gallery/reviewimage1_t.png" media="(min-width: 769px)">
+                  <source srcset="HTMLResources/img/components/gallery/reviewimage1_t.png" media="(min-width: 480px)">
+                  <img srcset="HTMLResources/img/components/gallery/reviewimage1_t.png" itemprop="thumbnail" alt="…" class="img-responsive">
+                </picture>
               </a>
-              <figcaption itemprop="caption description">
+              <figcaption itemprop="caption description" class="text-left">
                 <p>Call of the wild: the grey wolf could help regulate deer numbers. Photograph: Alamy</p>
               </figcaption>
             </figure>	  

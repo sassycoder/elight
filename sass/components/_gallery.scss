@@ -72,14 +72,12 @@
         font-family: $font-family1;
         font-size: 36px;
         line-height: 36px;
-        text-align: center;
       }
       .text, .words {
         font-family: $font-family3;
         font-size: 15px;
         line-height: 17px;
         font-weight: 400;
-        text-align: center;
         text-transform: none;
 
         strong {
@@ -102,15 +100,11 @@
       font-family: $font-family-icon;
       font-size: $icon-font-size;
       line-height: $icon-font-size;
-      margin-top: (-$icon-font-size/2) + ($navbar-height/2);
+      margin-top: -($icon-font-size/2);
       text-align: center;
       color: $gray-lighter;
       z-index: 1001;
       pointer-events: none;
-
-      @media (min-width: $screen-xs-min) {
-        opacity: 0;
-      }
     }
   }
 
@@ -126,7 +120,7 @@
   }
 
   .gallery-thumb {
-    display: block;
+    display: inline-block;
     position: relative;
 
     &:before {

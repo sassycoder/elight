@@ -34,6 +34,27 @@
 
 	.component.gallery {
 		max-width: 100%;
+		margin-bottom: 0;
+
+		&.js-modal {
+	    .slick-list:before {
+	      $icon-font-size: 32px;
+	      content: '\F003';
+	      position: absolute;
+	      top: 50%;
+	      left: 0;
+	      right: 0;      
+	      font-family: $font-family-icon;
+	      font-size: $icon-font-size;
+	      line-height: $icon-font-size;
+	      margin-top: -($icon-font-size/2) + ($navbar-height/2);
+	      text-align: center;
+	      color: $gray-lighter;
+	      z-index: 1001;
+	      pointer-events: none;
+	    }
+	  }
+
 		figcaption { display: none; }
 
 		img {

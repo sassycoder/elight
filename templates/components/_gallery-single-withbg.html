@@ -1,9 +1,13 @@
 <div class="component gallery" itemscope itemtype="http://schema.org/ImageGallery">
-  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="text-center">
     <a href="HTMLResources/img/components/gallery/reviewimage1.png" itemprop="contentUrl" data-size="1200x1210" class="gallery-thumb" style="background-color: #f8f8f8;">
-        <img src="HTMLResources/img/components/gallery/reviewimage1_t.png" itemprop="thumbnail" alt="Image description" class="img-responsive" />
+    	<picture>
+        <source srcset="HTMLResources/img/components/gallery/reviewimage1_t.png" media="(min-width: 769px)">
+        <source srcset="HTMLResources/img/components/gallery/reviewimage1_t.png" media="(min-width: 480px)">
+        <img srcset="HTMLResources/img/components/gallery/reviewimage1_t.png" itemprop="thumbnail" alt="…" class="img-responsive">
+      </picture>
     </a>
-    <figcaption itemprop="caption description">
+    <figcaption itemprop="caption description" class="text-left">
       <p>Call of the wild: the grey wolf could help regulate deer numbers. Photograph: Alamy</p>
     </figcaption>
   </figure>	  

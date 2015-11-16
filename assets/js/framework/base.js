@@ -56,7 +56,7 @@ $(function () {
     slidesToScroll: 3,
     adaptiveHeight: true,
     arrows: false,
-    swipe: false,
+    swipe: true,
     autoplay: true,
     pauseOnHover: false,
     autoplaySpeed: 100000,
@@ -84,9 +84,6 @@ $(function () {
     ]
   });
 
-  //wrap highlighted text in <p> to align center
-  // $('.someexample').textHighlight();
-
   // Widow handling
   // var paras = wt.fix({
   //       elements: 'p,span.highlight,span.caption,.heading,.standfirst,.film-info,.verdict,.article-link span,.words', //#main p:not(.highlight),span.highlight, div 
@@ -100,14 +97,4 @@ $(function () {
     e.preventDefault();
   });
 
-  //Insert duplicate letter for dropcap
-  // $('.dropcap').each(function (i,d) {
-  //     var t = $(this).text(),
-  //         chr = t.substring(0,1);
-  //     $(d).text(chr + t);
-  //   });
-  });
-
-// $(window).load(function() {
-//   $('.wrapper').css('height', $('.wrapper').height() + 'px');
-// });
+});
